@@ -1,0 +1,15 @@
+money = int(input())
+per_cent = {'ТКБ':5.6, 'СКБ':5.9, 'ВТБ':4.28, 'СБР':4.0}
+
+Values1 = list(per_cent.values())
+
+deposit = []
+
+i = 0
+for i in Values1:
+    deposit.append(round(money*i/100))
+
+print('deposit = ', deposit)
+
+deposit.sort()
+print('Макс сумма = ', deposit[-1])
